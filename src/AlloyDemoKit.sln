@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlloyDemoKit", "AlloyDemoKit\AlloyDemoKit.csproj", "{6FA51284-08EC-4032-AF77-D6F2ECA790D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherService", "WeatherService\WeatherService.csproj", "{847FDA30-8EC3-48CD-B82B-D7FC4BD54621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.Custom", "My.Custom\My.Custom.csproj", "{08E1FEBE-E8C3-4F61-870A-B0FE54BF4791}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{847FDA30-8EC3-48CD-B82B-D7FC4BD54621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{847FDA30-8EC3-48CD-B82B-D7FC4BD54621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{847FDA30-8EC3-48CD-B82B-D7FC4BD54621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E1FEBE-E8C3-4F61-870A-B0FE54BF4791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E1FEBE-E8C3-4F61-870A-B0FE54BF4791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E1FEBE-E8C3-4F61-870A-B0FE54BF4791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E1FEBE-E8C3-4F61-870A-B0FE54BF4791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9221F53A-68B0-45BD-836C-1BF272DD5984}
 	EndGlobalSection
 EndGlobal

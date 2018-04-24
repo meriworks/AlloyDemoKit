@@ -72,7 +72,7 @@
       <HintPath>..\packages\DbLocalizationProvider.AdminUI.EPiServer.4.3.0\lib\net461\DbLocalizationProvider.AdminUI.EPiServer.dll</HintPath>
     </Reference>
     <Reference Include="DbLocalizationProvider.AspNet, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LocalizationProvider.AspNet.4.2.0\lib\net461\DbLocalizationProvider.AspNet.dll</HintPath>
+      <HintPath>..\packages\LocalizationProvider.AspNet.4.2.1\lib\net461\DbLocalizationProvider.AspNet.dll</HintPath>
     </Reference>
     <Reference Include="DbLocalizationProvider.EPiServer, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DbLocalizationProvider.EPiServer.4.3.0\lib\net461\DbLocalizationProvider.EPiServer.dll</HintPath>
@@ -583,6 +583,7 @@
     <Compile Include="Models\Blocks\HeroBlock.cs" />
     <Compile Include="Models\Blocks\ImageGalleryBlock.cs" />
     <Compile Include="Models\Blocks\LinkedInCompanyBlock.cs" />
+    <Compile Include="Models\Blocks\MyCustomBlock.cs" />
     <Compile Include="Models\Blocks\ParkingBlock.cs" />
     <Compile Include="Models\Blocks\EditorialBlock.cs" />
     <Compile Include="Models\Blocks\JumbotronBlock.cs" />
@@ -657,6 +658,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\My.Custom\My.Custom.csproj">
+      <Project>{08e1febe-e8c3-4f61-870a-b0fe54bf4791}</Project>
+      <Name>My.Custom</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeatherService\WeatherService.csproj">
       <Project>{847fda30-8ec3-48cd-b82b-d7fc4bd54621}</Project>
       <Name>WeatherService</Name>
@@ -751,6 +756,7 @@
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\Shared\EditorTemplates\FormModel.ascx" />
     <Content Include="modules\_protected\EPiServer.Marketing.Testing\abcapture\capture.js" />
     <Content Include="modules\_protected\EPiServer.Marketing.Testing\abcapture\phantomjs.exe" />
+    <Content Include="modules\_protected\My.Custom\1.0.0\scripts\PropertyControl.js" />
     <Content Include="NotFound.aspx" />
     <Content Include="Static\css\VisitorGroupUIOverrides.css" />
     <Content Include="Static\gfx\block-thumbnail-parking.png" />
@@ -1036,6 +1042,9 @@
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
     <Content Include="modules\_protected\CMS\CMS.zip" />
+    <Content Include="modules\_protected\My.Custom\module.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
