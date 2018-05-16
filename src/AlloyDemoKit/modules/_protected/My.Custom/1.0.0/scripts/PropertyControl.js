@@ -17,12 +17,32 @@
         templateString:'<div> \
                       <input type="text" data-dojo-attach-point="textbox" data-dojo-attach-event="onchange:_onChange" /> \
                      </div>',
-        constructor: function() {
-            when(this.getCurrentContext(),
-                function(context) {
-                    console.log("we have context\n dataType:"+context.dataType+"\n context:"+JSON.stringify(context));
-                });
-        },
+		constructor: function() {
+			when(this.getCurrentContext(),
+				function(context) {
+					console.log("we have context\n dataType:"+context.dataType+"\n context:"+JSON.stringify(context));
+				});
+		},
+		buildRendering: function () {
+			this.inherited(arguments);
+
+			// it won't work
+			/* when(this.getCurrentContext(),
+				 function (context) {
+					 this.contextName.innerHTML = "we have context\n dataType:" +
+						 context.dataType +
+						 "\n context:" +
+						 JSON.stringify(context);
+				 }.bind(this));*/
+
+			var name = this.name; // name of the property
+			var contextParentType = this.context_parentType; // it will be your block
+			var contextLink = this.context_link; // when creating the block from ContentArea this will be ""
+			if (contextLink === "") {
+				console.log("creating block from ContentArea");
+				// do something special
+			}
+		},
         postCreate: function () {
             // summary:
             //    Set the value to the textbox after the DOM fragment is created.
